@@ -1,1 +1,0 @@
-# joelyoshiya.github.io
