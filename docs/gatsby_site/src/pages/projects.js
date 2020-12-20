@@ -6,12 +6,12 @@ import Navbar from "../components/navbar"
 
 
 
-export default function Landing() {
+export default function Projects() {
     return (
         <Container>
-            <Header headerText="Landing"></Header>    
+            <Header headerText="My Projects"></Header>    
             <Navbar />
-            <p>Hi! I'm Joel and here is a little about me.</p>
+            <p>Here are some projects I've done</p>
         </Container>
         )
   }
