@@ -1,5 +1,6 @@
 import React from "react"
+import Landing from "./landing"
 
 export default function Home() {
-  return <div>My personal page :))). With an update.</div>
+  return <Landing />
 }
