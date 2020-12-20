@@ -4,6 +4,7 @@ import Header from "../components/header"
 import Container from "../components/container"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
+import Project from "../components/project"
 
 
 
@@ -13,6 +14,9 @@ export default function Projects() {
             <Header headerText="My Projects"></Header>    
             <Navbar />
             <p>Here are some projects I've done</p>
+            <Project projTitle="Spotivibez"></Project>
+            <Project projTitle="Dialogflow Agent"></Project>
+            <Project projTitle="Movie Database Client"></Project>
             <Footer />
         </Container>
         )
