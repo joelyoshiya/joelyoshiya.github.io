@@ -1,6 +1,5 @@
 import React from "react"
-import Card from "react-bootstrap/Card"
-
+import Card from 'react-bootstrap/Card'
 // TODO import bootstrap-card
 
 export default function Project(props) {
