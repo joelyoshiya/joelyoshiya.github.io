@@ -1,13 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import Container from "./container"
+import styles from "./navbar.module.css"
 
 export default function Navbar() {
   return (
     <Container>
-      <Link to="/contact/">Contact</Link>
-      <Link to="/">Landing</Link>
-      <Link to="/projects">Projects</Link>
+      <Link className = {styles.link} to="/contact/">Contact</Link>
+      <Link className = {styles.link} to="/">Landing</Link>
+      <Link className = {styles.link} to="/projects">Projects</Link>
     </Container>
   )
 }
