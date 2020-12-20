@@ -31,13 +31,14 @@ export default function Landing() {
       <ul>
         <li>User Interface Design</li>
         <li>Database Management Systems</li>
-        <li>Object Oriented Programming (Java)</li>
         <li>Algorithms</li>
+        <li>Object Oriented Programming (Java)</li>
+        <li>Data Structures (Java)</li>
         <li>Machine Organization and Programming</li>
         <li>Data Science with Python</li>
       </ul>
       <br></br>
-      
+
       <Footer />
     </Container>
   )
