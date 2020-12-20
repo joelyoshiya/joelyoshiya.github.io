@@ -9,6 +9,7 @@ export default function Navbar() {
       <Link className = {styles.link} to="/contact/">Contact</Link>
       <Link className = {styles.link} to="/">Landing</Link>
       <Link className = {styles.link} to="/projects">Projects</Link>
+      <Link className = {styles.link} to="/blog">Blog</Link>
     </Container>
   )
 }

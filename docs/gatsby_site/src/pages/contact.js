@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../components/header"
+import Footer from "../components/footer"
 // import { Link } from "gatsby"
 import Navbar from "../components/navbar"
 import Container from "../components/container"
@@ -12,6 +13,7 @@ export default function Contact() {
         <Navbar />
         <p>Email: jyfoster@wisc.edu</p>
         <p>For inquiries or resume requests please email me.</p>
+        <Footer />
       </div>
     </Container>
   )
