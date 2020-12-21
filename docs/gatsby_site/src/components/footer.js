@@ -19,11 +19,11 @@ export default function Footer(props) {
         Spotify
       </a>
       <p>
-        Built with 
+        Built with{" "}  
         <span role="img" aria-labelledby="jsx-ally/accessible-emoji">
           💚
-        </span>
-        by Joel Yoshiya Foster
+        </span>{" "}
+          by Joel Yoshiya Foster
       </p>
     </div>
   )

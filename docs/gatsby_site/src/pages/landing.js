@@ -13,7 +13,7 @@ export default function Landing() {
       <p>
         Hi! I'm Joel. Currently a 3rd year at UW-Madison studying Comp Sci and
         Japanese. I'm starting to get obsessed with web dev. Looking for an
-        internship to dive into it! Also a runner, music/fashion nerd{" "}
+        internship to dive into it! Also a runner, like various genres of music, etc.
         <span role="img" aria-labelledby="jsx-ally/accessible-emoji">
           🐸
         </span>

@@ -1,14 +1,14 @@
 import React from "react"
-import Card from 'react-bootstrap/Card'
-// TODO import bootstrap-card
+import { Card } from "react-bootstrap"
 
 export default function Project(props) {
+
   return (
-    <div>
-      <Card>
-        <Card.Title>{props.projTitle}</Card.Title>
-        <Card.Description>Here is the card description</Card.Description>
-      </Card>
-    </div>
+    <Card>
+      <Card.Body>
+        <Card.Title>Title of card</Card.Title>
+        <Card.Text>Description for card</Card.Text>
+      </Card.Body>
+    </Card>
   )
 }
