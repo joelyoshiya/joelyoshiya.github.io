@@ -14,7 +14,7 @@ export default function Projects() {
             <Header headerText="My Projects"></Header>    
             <Navbar />
             <p>Here are some projects I've done</p>
-            <Project project_id="Spotivibez"></Project>
+            <Project project_id="Spotivibez" />
             <Project project_id="Dialogflow Agent"></Project>
             <Project project_id="Movie Database Client"></Project>
             <Footer />

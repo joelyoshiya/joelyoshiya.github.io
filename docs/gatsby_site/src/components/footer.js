@@ -6,16 +6,16 @@ export default function Footer(props) {
   //nothing too complicated here
   return (
     <div>
-      <a href="blah.com" className={styles.a}>
+      <a href="https://github.com/joelyoshiya" target="_blank" rel="noreferrer" className={styles.a}>
         Github
       </a>
-      <a href="blah.com" className={styles.a}>
+      <a href="https://www.instagram.com/yoshi._j/" target="_blank" rel="noreferrer" className={styles.a}>
         Instagram
       </a>
-      <a href="blah.com" className={styles.a}>
+      <a href="https://www.linkedin.com/in/joel-yoshiya-foster/" target="_blank" rel="noreferrer" className={styles.a}>
         LinkedIn
       </a>
-      <a href="blah.com" className={styles.a}>
+      <a href="https://open.spotify.com/user/1229025912" target="_blank" rel="noreferrer" className={styles.a}>
         Spotify
       </a>
       <p>
