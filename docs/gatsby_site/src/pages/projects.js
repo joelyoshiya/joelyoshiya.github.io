@@ -5,6 +5,7 @@ import Container from "../components/container"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 import Project from "../components/project"
+import Layout from "../components/layout.js"
 
 
 

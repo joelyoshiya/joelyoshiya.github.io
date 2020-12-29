@@ -18,7 +18,6 @@ export default function Landing() {
           🐸
         </span>
       </p>
-      <br></br>
       <h2>Skills</h2>
       <p>Want to put some icons covering my skills here:</p>
       <ul>

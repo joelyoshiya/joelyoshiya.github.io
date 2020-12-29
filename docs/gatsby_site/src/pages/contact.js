@@ -5,6 +5,8 @@ import Footer from "../components/footer"
 import Navbar from "../components/navbar"
 import Container from "../components/container"
 import Card from "react-bootstrap/esm/Card"
+import Layout from "../components/layout.js"
+
 
 export default function Contact() {
   return (
