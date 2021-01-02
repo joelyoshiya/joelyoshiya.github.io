@@ -2,6 +2,11 @@ import React from "react"
 import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 
+import GitIcon from "../images/iconmonstr-github-1.svg"
+import InstaIcon from "../images/iconmonstr-instagram-11.svg"
+import LinkedInIcon from "../images/iconmonstr-linkedin-3.svg"
+import SpotifyLink from '../images/iconmonstr-spotify-1.svg'
+
 import { rhythm } from "../utils/typography"
 export default function Layout({ children }) {
   const data = useStaticQuery(
@@ -42,8 +47,7 @@ export default function Layout({ children }) {
         `}
       >
         About
-      </Link>
-      {' '}
+      </Link>{" "}
       <Link
         to={"/blog/"}
         css={css`
@@ -70,30 +74,50 @@ export default function Layout({ children }) {
       </Link>
       {children}
       <div>
-      <a href="https://github.com/joelyoshiya" target="_blank" rel="noreferrer" >
-      <img
+        <a
+          href="https://github.com/joelyoshiya"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {/* <img
             src={'src/images/iconmonstr-github-1.svg'}
             alt="Github"
             style={{ width: '14em', height: '10em' }}
-          />
-      </a>
-      <a href="https://www.instagram.com/yoshi._j/" target="_blank" rel="noreferrer" >
-        Instagram
-      </a>
-      <a href="https://www.linkedin.com/in/joel-yoshiya-foster/" target="_blank" rel="noreferrer" >
-        LinkedIn
-      </a>
-      <a href="https://open.spotify.com/user/1229025912" target="_blank" rel="noreferrer" >
-        Spotify
-      </a>
-      <p>
-        Built with{" "}  
-        <span role="img" aria-labelledby="jsx-ally/accessible-emoji">
-          💚
-        </span>{" "}
+          /> */}
+          <GitIcon />
+          {' '}
+        </a>
+        <a
+          href="https://www.instagram.com/yoshi._j/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <InstaIcon />
+          {' '}
+        </a>
+        <a
+          href="https://www.linkedin.com/in/joel-yoshiya-foster/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <LinkedInIcon />
+          {' '}
+        </a>
+        <a
+          href="https://open.spotify.com/user/1229025912"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SpotifyLink />
+        </a>
+        <p>
+          Built with{" "}
+          <span role="img" aria-labelledby="jsx-ally/accessible-emoji">
+            💚
+          </span>{" "}
           by Joel Yoshiya Foster
-      </p>
-    </div>
+        </p>
+      </div>
     </div>
   )
 }

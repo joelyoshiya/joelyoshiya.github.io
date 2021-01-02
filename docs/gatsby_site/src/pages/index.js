@@ -1,10 +1,4 @@
 import React from "react"
-import { rhythm } from "../utils/typography"
-import Header from "../components/header"
-import Footer from "../components/footer"
-// import { Link } from "gatsby"
-import Container from "../components/container"
-import Navbar from "../components/navbar"
 import Layout from "../components/layout.js"
 
 export default function Home() {
