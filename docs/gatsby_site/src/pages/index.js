@@ -4,13 +4,14 @@ import Layout from "../components/layout.js"
 export default function Home() {
   return (
     <Layout>
-    {/* // <Container>
+      {/* // <Container>
     //   <Header headerText="Landing"></Header>
     //   <Navbar /> */}
       <p>
         Hi! I'm Joel. Currently a 3rd year at UW-Madison studying Comp Sci and
         Japanese. I'm starting to get obsessed with web dev. Looking for an
-        internship to dive into it! Also a runner, like various genres of music, etc. A change.
+        internship to dive into it! Also a runner, like various genres of music,
+        etc. A change. A change again.
         <span role="img" aria-labelledby="jsx-ally/accessible-emoji">
           🐸
         </span>
@@ -35,7 +36,7 @@ export default function Home() {
       </ul>
       <br></br>
 
-    {/* //   <Footer />
+      {/* //   <Footer />
     // </Container> */}
     </Layout>
   )
