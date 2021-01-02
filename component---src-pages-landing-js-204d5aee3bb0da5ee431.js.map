@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/landing.js"],"names":["Home"],"mappings":"2FAAA,wEAEe,SAASA,IACpB,OAAO","file":"component---src-pages-landing-js-204d5aee3bb0da5ee431.js","sourcesContent":["import React from \"react\"\r\n\r\nexport default function Home() {\r\n    return <div>My personal page :)</div>\r\n  }"],"sourceRoot":""}

@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{c8AL:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return a}));var r=t("q1tI"),u=t.n(r);function a(){return u.a.createElement("div",null,"My personal page :)")}}}]);
-//# sourceMappingURL=component---src-pages-landing-js-204d5aee3bb0da5ee431.js.map

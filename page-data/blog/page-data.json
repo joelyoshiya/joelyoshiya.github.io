@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-blog-js","path":"/blog/","result":{"pageContext":{}},"staticQueryHashes":[]}
+{"componentChunkName":"component---src-pages-blog-js","path":"/blog/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"id":"21ab4ac3-7c72-59ed-9532-076bf45f5618","frontmatter":{"title":"My very nice blog post","date":"24 December, 2020"},"fields":{"slug":"/my-blog/"},"excerpt":"Gatsby is pretty interesting  Learning a whole lot! That's all. Thanks"}}]}},"pageContext":{}},"staticQueryHashes":["3159585216"]}

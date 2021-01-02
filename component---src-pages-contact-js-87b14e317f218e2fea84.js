@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"Cuy+":function(e,t,u){"use strict";u.r(t),u.d(t,"default",(function(){return i}));u("q1tI");var n=u("Bl7J"),r=u("AeFk");function i(){return Object(r.b)(n.a,null,Object(r.b)("p",null,"Email: ",Object(r.b)("a",{href:"mailto:jyfoster@wisc.edu"},"jyfoster@wisc.edu")),Object(r.b)("p",null,"For inquiries or resume requests please email me."))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-87b14e317f218e2fea84.js.map
