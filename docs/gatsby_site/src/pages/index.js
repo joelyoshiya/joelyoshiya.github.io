@@ -11,7 +11,7 @@ export default function Home() {
         Hi! I'm Joel. Currently a 3rd year at UW-Madison studying Comp Sci and
         Japanese. I'm starting to get obsessed with web dev. Looking for an
         internship to dive into it! Also a runner, like various genres of music,
-        etc. A change. A change again. Made a change. 
+        etc.{" "}  
         <span role="img" aria-labelledby="jsx-ally/accessible-emoji">
           🐸
         </span>
