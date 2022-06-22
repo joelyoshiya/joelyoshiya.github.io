@@ -8,10 +8,8 @@ export default function Home() {
     //   <Header headerText="Landing"></Header>
     //   <Navbar /> */}
       <p>
-        Hi! I'm Joel. Currently a 3rd year at UW-Madison studying Comp Sci and
-        Japanese. I'm starting to get obsessed with web dev. Looking for an
-        internship to dive into it! Also a runner, like various genres of music,
-        etc.{" "}  
+        Hi! I'm Joel. I am a recent grad with degrees in Computer Sciences and Japanese. I'm looking for roles as 
+        a software engineer.{" "}  
         <span role="img" aria-labelledby="jsx-ally/accessible-emoji">
           🐸
         </span>
@@ -20,12 +18,16 @@ export default function Home() {
       <p>Want to put some icons covering my skills here:</p>
       <ul>
         <li>React</li>
-        <li>Javascript/Typescript</li>
+        <li>Javascript</li>
         <li>Java</li>
+        <li>Python</li>
         <li>MySQL</li>
+        <li>C</li>
       </ul>
       <h2>Courses</h2>
       <ul>
+        <li>Operating Systems</li>
+        <li>Compiler Design</li>
         <li>User Interface Design</li>
         <li>Database Management Systems</li>
         <li>Algorithms</li>
