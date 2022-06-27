@@ -3,11 +3,11 @@ import Card from 'react-bootstrap/Card'// import styles from "./project.module.c
 
 export default function Project(props) {
   return (
-      <Card>
+    <Card border="primary" style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Title>{props.project_id}</Card.Title>
           <Card.Text>Description for card</Card.Text>
         </Card.Body>
-      </Card>
+    </Card>
   )
 }

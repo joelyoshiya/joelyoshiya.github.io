@@ -14,8 +14,9 @@ export default function Blog({ data }) {
             border-bottom: 1px solid;
           `}
         >
-          Blog Name Here
+          Various ponderings and notes. 
         </h1>
+        <h3>This page is under construction...</h3>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>

@@ -9,20 +9,17 @@ export default function Home() {
     //   <Navbar /> */}
       <p>
         Hi! I'm Joel. I am a recent grad with degrees in Computer Sciences and Japanese. I'm looking for roles as 
-        a software engineer.{" "}  
-        <span role="img" aria-labelledby="jsx-ally/accessible-emoji">
-          🐸
-        </span>
+        a software engineer. I'm just starting to learn what it means to code with the care of an artisan
+        and the passion of an inventor, but I'm excited to keep diving in and getting my hands dirty!{" "}
       </p>
       <h2>Skills</h2>
-      <p>Want to put some icons covering my skills here:</p>
+      {/*Want to put some icons covering my skills here:*/}
       <ul>
-        <li>React</li>
-        <li>Javascript</li>
         <li>Java</li>
+        <li>Javascript (React, React Native, Node.js)</li>
         <li>Python</li>
-        <li>MySQL</li>
         <li>C</li>
+        <li>MySQL</li>
       </ul>
       <h2>Courses</h2>
       <ul>
@@ -34,6 +31,7 @@ export default function Home() {
         <li>Object Oriented Programming (Java)</li>
         <li>Data Structures (Java)</li>
         <li>Machine Organization and Programming</li>
+        <li>Human Computer Interaction</li>
         <li>Data Science with Python</li>
       </ul>
       <br></br>
