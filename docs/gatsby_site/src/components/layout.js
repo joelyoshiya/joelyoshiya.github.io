@@ -1,13 +1,20 @@
 import React from "react"
-import { css } from "@emotion/react"
+//import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby"
+import {
+  container,
+  heading,
+  navLinks,
+  navLinkItem,
+  navLinkText
+} from './layout.module.css'
+
 
 import GitIcon from "../images/iconmonstr-github-1.svg"
 // import InstaIcon from "../images/iconmonstr-instagram-11.svg"
 import LinkedInIcon from "../images/iconmonstr-linkedin-3.svg"
 import SpotifyLink from '../images/iconmonstr-spotify-1.svg'
 
-import { rhythm } from "../utils/typography"
 export default function Layout({ children }) {
   const data = useStaticQuery(
     graphql`
@@ -21,85 +28,51 @@ export default function Layout({ children }) {
     `
   )
   return (
-    <div
-      css={css`
-        margin: 0 auto;
-        max-width: 700px;
-        padding: ${rhythm(2)};
-        padding-top: ${rhythm(1.5)};
-      `}
-    >
-      <Link to={`/`}>
-        <h3
-          css={css`
-            margin-bottom: ${rhythm(2)};
-            display: inline-block;
-            font-style: normal;
-          `}
-        >
-          {data.site.siteMetadata.title}
-        </h3>
-      </Link>
-      <Link
-        to={`/about/`}
-        css={css`
-          float: right;
-        `}
-      >
-        About
-      </Link>{" "}
-      <Link
-        to={"/blog/"}
-        css={css`
-          float: right;
-        `}
-      >
-        Blog
-      </Link>
-      <Link
-        to={"/contact/"}
-        css={css`
-          float: right;
-        `}
-      >
-        Contact
-      </Link>
-      <Link
-        to={"/projects/"}
-        css={css`
-          float: right;
-        `}
-      >
-        Projects
-      </Link>
-      {children}
-      <div>
+    <div className={container}>
+      <header>
+        <h1 className={heading}>
+          <Link to="/">{data.site.siteMetadata.title}</Link>
+        </h1>
+      </header>
+      <nav>
+        <ul className={navLinks}>
+          <li className={navLinkItem}>
+            <Link to="/about/" className={navLinkText}>
+              about
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/projects/" className={navLinkText}>
+              projects
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/blog/" className={navLinkText}>
+              blog
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/contact/" className={navLinkText}>
+              contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <main>{children}</main>
+      <footer>
         <a
-          href="https://github.com/joelyoshiya"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {/* <img
-            src={'src/images/iconmonstr-github-1.svg'}
-            alt="Github"
-            style={{ width: '14em', height: '10em' }}
-          /> */}
+            href="https://github.com/joelyoshiya"
+            target="_blank"
+            rel="noreferrer"
+          >
           <GitIcon />
-          {' '}
-        </a>
-        <a
-          href="https://www.instagram.com/yoshi._j/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {/* <InstaIcon />
-          {' '}
+          {''}
         </a>
         <a
           href="https://www.linkedin.com/in/joel-yoshiya-foster/"
           target="_blank"
           rel="noreferrer"
-        > */}
+        >
           <LinkedInIcon />
           {' '}
         </a>
@@ -117,7 +90,7 @@ export default function Layout({ children }) {
           </span>{" "}
           by Joel Yoshiya Foster
         </p>
-      </div>
+      </footer>
     </div>
   )
 }
