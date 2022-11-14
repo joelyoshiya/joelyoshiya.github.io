@@ -66,7 +66,7 @@ export default function Layout({ children }) {
             rel="noreferrer"
           >
           <GitIcon />
-          {''}
+          {' '}
         </a>
         <a
           href="https://www.linkedin.com/in/joel-yoshiya-foster/"
@@ -82,12 +82,15 @@ export default function Layout({ children }) {
           rel="noreferrer"
         >
           <SpotifyLink />
+          {' '}
         </a>
         <p>
-          Built with{" "}
+          Built with
+          {" "}
           <span role="img" aria-labelledby="jsx-ally/accessible-emoji">
             💚
-          </span>{" "}
+          </span>
+          {" "}
           by Joel Yoshiya Foster
         </p>
       </footer>

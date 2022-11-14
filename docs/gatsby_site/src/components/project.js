@@ -1,16 +1,18 @@
 import React from "react"
 import Card from 'react-bootstrap/Card'
-import { projects, card } from "./project.module.css"
+import Button from 'react-bootstrap/Button';
+import { card } from "./project.module.css"
+import CardImg from "../images/iconmonstr-linkedin-3.svg"
 
 export default function Project({ project_id, children }) {
   return (
-    <div className={projects}>
       <Card className={card}>
         <Card.Body>
+          <Card.Img variant="top" src={CardImg}/>
           <Card.Title>{project_id}</Card.Title>
           <Card.Text>{children}</Card.Text>
+          <Button variant="primary">Learn More</Button>
         </Card.Body>
       </Card>
-    </div>
   )
 }

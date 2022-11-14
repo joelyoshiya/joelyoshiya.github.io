@@ -1,19 +1,17 @@
 import React from "react"
 import Layout from "../components/layout.js"
+import Seo from '../components/seo'
 
 
-export default function Home() {
+
+const IndexPage = () => {
   return (
     <Layout>
-      {/* // <Container>
-    //   <Header headerText="Landing"></Header>
-    //   <Navbar /> */}
       <p>
         Hi! I'm Joel. I am a recent grad with degrees in Computer Sciences and Japanese. I'm looking for roles as 
         a software engineer. I'm learning what it means to code with the care of an artisan
         and the passion of an inventor, and I'm excited to keep diving in and getting my hands dirty!{" "}
       </p>
-      <h2>Song of the week:</h2>
       <h2>Skills</h2>
       {/*Want to put some icons covering my skills here:*/}
       <ul>
@@ -36,10 +34,10 @@ export default function Home() {
         <li>Human Computer Interaction</li>
         <li>Data Science with Python</li>
       </ul>
-      <br></br>
-
-      {/* //   <Footer />
-    // </Container> */}
     </Layout>
   )
 }
+
+export const Head = () => <Seo title="Landing" />
+
+export default IndexPage
