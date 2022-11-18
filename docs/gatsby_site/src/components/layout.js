@@ -37,11 +37,6 @@ export default function Layout({ children }) {
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
-            <Link to="/about/" className={navLinkText}>
-              about
-            </Link>
-          </li>
-          <li className={navLinkItem}>
             <Link to="/projects/" className={navLinkText}>
               projects
             </Link>
@@ -54,6 +49,11 @@ export default function Layout({ children }) {
           <li className={navLinkItem}>
             <Link to="/contact/" className={navLinkText}>
               contact
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/about/" className={navLinkText}>
+              about
             </Link>
           </li>
         </ul>
