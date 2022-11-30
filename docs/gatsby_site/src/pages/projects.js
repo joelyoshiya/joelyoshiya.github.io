@@ -1,7 +1,7 @@
 import React from "react"
 import Project from "../components/project"
 import Layout from "../components/layout"
-import {projects} from "../components/project.module.css"
+import { projects } from "../components/project.module.css"
 
 export default function Projects() {
   return (
