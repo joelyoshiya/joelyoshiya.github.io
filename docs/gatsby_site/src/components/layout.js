@@ -25,28 +25,30 @@ export default function Layout({ children }) {
     <div className={styles.container}>
       <header className={styles.header}>
         <nav className={styles.nav}>
-          <Link to="/" className={styles.siteLogo}>
-            Joel's Portfolio
-          </Link>
           <ul className={styles.navLinks}>
             <li className={styles.navLinkItem}>
+              <Link to="/" className={styles.navLinkText}>
+                Portfolio
+              </Link>
+            </li>
+            <li className={styles.navLinkItem}>
               <Link to="/projects/" className={styles.navLinkText}>
-                projects
+                Projects
               </Link>
             </li>
             <li className={styles.navLinkItem}>
               <Link to="/blog/" className={styles.navLinkText}>
-                blog
+                Blog
               </Link>
             </li>
             <li className={styles.navLinkItem}>
               <Link to="/contact/" className={styles.navLinkText}>
-                contact
+                Contact
               </Link>
             </li>
             <li className={styles.navLinkItem}>
               <Link to="/about/" className={styles.navLinkText}>
-                about
+                About
               </Link>
             </li>
           </ul>
