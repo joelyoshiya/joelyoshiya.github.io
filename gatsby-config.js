@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `joelyoshiya-personal-site`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `joelyoshiya.github.io`,
+    siteUrl: `https://joelyoshiya.me/`,
   },
   plugins: [],
 }
