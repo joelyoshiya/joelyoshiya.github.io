@@ -6,5 +6,5 @@ module.exports = {
     title: `joelyoshiya.github.io`,
     siteUrl: `https://joelyoshiya.me/`,
   },
-  plugins: [],
-}
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
+};
