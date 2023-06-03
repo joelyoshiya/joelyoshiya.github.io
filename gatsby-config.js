@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `joelyoshiya.github.io`,
+    title: `My Portfolio Site`,
     siteUrl: `https://joelyoshiya.me/`,
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
