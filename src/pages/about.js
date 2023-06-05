@@ -1,6 +1,7 @@
 // Step 1: Import React
 import * as React from "react";
 import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 // Step 2: Define your component
 const AboutPage = () => {
@@ -16,7 +17,7 @@ const AboutPage = () => {
 // Step 2.5: Add a page title to the <Head>
 export const Head = () => (
   <>
-    <title>About This Site</title>
+    <Seo title="About" />
     <meta name="description" content="Describes how this site was built" />
   </>
 );
