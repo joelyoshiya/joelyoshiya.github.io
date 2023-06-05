@@ -3,11 +3,11 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 // Step 2: Define your component
-const BlogPage = () => {
+const ProjectsPage = () => {
   return (
     <main>
-      <Layout pageTitle="Yoshi's Word  Island - a blog by Joel Yoshiya Foster">
-        <p>This is the start of my blog</p>
+      <Layout pageTitle="Projects">
+        <p>Projects TBD</p>
       </Layout>
     </main>
   );
@@ -16,10 +16,10 @@ const BlogPage = () => {
 // Step 2.5: Add a page title to the <Head>
 export const Head = () => (
   <>
-    <Seo title="Blog" />
-    <meta name="description" content="blog portion of my portfolio site" />
+    <Seo title="Projects" />
+    <meta name="description" content="Projects I've completed" />
   </>
 );
 
 // Step 3: Export your component
-export default BlogPage;
+export default ProjectsPage;

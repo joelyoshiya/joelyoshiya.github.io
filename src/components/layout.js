@@ -22,22 +22,31 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={container}>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
-              Home
+              {data.site.siteMetadata.title}
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/projects" className={navLinkText}>
+              Projects
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/blog" className={navLinkText}>
+              Blog
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/contact" className={navLinkText}>
+              Contact
             </Link>
           </li>
           <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
               About
-            </Link>
-          </li>
-          <li>
-            <Link to="/blog" className={navLinkText}>
-              Blog
             </Link>
           </li>
         </ul>

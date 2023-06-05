@@ -9,7 +9,12 @@ const IndexPage = () => {
   return (
     <main>
       <Layout pageTitle="Joel Yoshiya Foster">
-        <p>This is the start of my personal site.</p>
+        <p>
+          I'm a product-driven engineer who loves to both explore the
+          performance, scalability, and extensibility facets of a solution while
+          also considering the people we're building for every stop along the
+          way.
+        </p>
         <StaticImage
           alt="a creative coding generated gradient image"
           src="../images/profile.jpeg"
