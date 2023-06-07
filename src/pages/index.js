@@ -2,6 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import ProfileImage from "../components/profileImage";
 
 const IndexPage = () => {
   return (
@@ -13,10 +14,7 @@ const IndexPage = () => {
           also considering the people we're building for every stop along the
           way.
         </p>
-        <StaticImage
-          alt="a creative coding generated gradient image"
-          src="../images/profile.jpeg"
-        />
+        <ProfileImage />
       </Layout>
     </main>
   );
