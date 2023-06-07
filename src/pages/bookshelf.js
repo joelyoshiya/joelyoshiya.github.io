@@ -8,8 +8,8 @@ const BookShelfPage = () => {
       <Layout pageTitle="Yoshi's Word  Island - a blog by Joel Yoshiya Foster">
         <ol>
           <li>Ametora</li>
-          <li></li>
-          <li>Book 3</li>
+          <li>Figuring</li>
+          <li>Zero To One</li>
         </ol>
       </Layout>
     </main>
