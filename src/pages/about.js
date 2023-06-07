@@ -1,9 +1,7 @@
-// Step 1: Import React
 import * as React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-// Step 2: Define your component
 const AboutPage = () => {
   return (
     <main>
@@ -14,7 +12,6 @@ const AboutPage = () => {
   );
 };
 
-// Step 2.5: Add a page title to the <Head>
 export const Head = () => (
   <>
     <Seo title="About" />
@@ -22,5 +19,4 @@ export const Head = () => (
   </>
 );
 
-// Step 3: Export your component
 export default AboutPage;
