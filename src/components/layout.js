@@ -1,12 +1,5 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-} from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -20,43 +13,31 @@ const Layout = ({ pageTitle, children }) => {
   `);
 
   return (
-    <div className={container}>
+    <div>
       <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              {data.site.siteMetadata.title}
-            </Link>
+        <ul>
+          <li>
+            <Link to="/">{data.site.siteMetadata.title}</Link>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/projects" className={navLinkText}>
-              Projects
-            </Link>
+          <li>
+            <Link to="/projects">Projects</Link>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              Blog
-            </Link>
+          <li>
+            <Link to="/blog">Blog</Link>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/bookshelf" className={navLinkText}>
-              Bookshelf
-            </Link>
+          <li>
+            <Link to="/bookshelf">Bookshelf</Link>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/contact" className={navLinkText}>
-              Contact
-            </Link>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
+          <li>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
       <main>
-        <h1 className={heading}>{pageTitle}</h1>
+        <h1 className="text-3xl font-bold">{pageTitle}</h1>
         {children}
       </main>
     </div>
