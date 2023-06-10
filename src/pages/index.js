@@ -7,13 +7,13 @@ const IndexPage = () => {
   return (
     <main>
       <Layout pageTitle="Joelyoshiya.me">
+        <ProfileImage />
         <p>
           I'm a product-driven engineer who loves to both explore the
           performance, scalability, and extensibility facets of a solution while
           also considering the people we're building for every stop along the
           way.
         </p>
-        <ProfileImage />
       </Layout>
     </main>
   );
