@@ -8,11 +8,16 @@ const IndexPage = () => {
     <main>
       <Layout pageTitle="Joelyoshiya.me">
         <ProfileImage />
-        <p>
-          I'm a product-driven engineer who loves to both explore the
-          performance, scalability, and extensibility facets of a solution while
-          also considering the people we're building for every stop along the
-          way.
+        <p className="text-3xl text-emerald-500">
+          I'm Joel, a product-driven software engineer and thinker
+        </p>
+        <p className="text-lg">
+          I love to both explore the performance, scalability, and extensibility
+          facets of a solution and
+          <span className="font-semibold">
+            {" "}
+            always consider who we're building for.{" "}
+          </span>
         </p>
       </Layout>
     </main>
