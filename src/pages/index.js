@@ -6,9 +6,9 @@ import ProfileImage from "../components/profileImage";
 const IndexPage = () => {
   return (
     <main>
-      <Layout pageTitle="Joelyoshiya.me">
+      <Layout pageTitle="joelyoshiya.me">
         <ProfileImage />
-        <p className="text-3xl text-emerald-500">
+        <p className="mb-1 text-3xl text-emerald-500 dark:text-emerald-300">
           I'm Joel, a product-driven software engineer and thinker
         </p>
         <p className="text-lg">
