@@ -6,7 +6,7 @@ import ProfileImage from "../components/profileImage";
 const IndexPage = () => {
   return (
     <main>
-      <Layout pageTitle="joelyoshiya.me">
+      <Layout pageTitle="Joelyoshiya.me">
         <p>
           I'm a product-driven engineer who loves to both explore the
           performance, scalability, and extensibility facets of a solution while
