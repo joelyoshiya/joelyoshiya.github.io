@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { CgDarkMode } from "react-icons/cg";
 
 // this func will toggle dark mode by changing the classname on the body element
 const toggleDarkMode = () => {
@@ -72,7 +73,7 @@ const Navbar = ({ siteTitle }) => {
               className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               onClick={toggleDarkMode}
             >
-              Toggle Dark Mode
+              <CgDarkMode size="1.5em" />
             </button>
           </li>
         </div>
