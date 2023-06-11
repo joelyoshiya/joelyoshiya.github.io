@@ -7,18 +7,20 @@ const IndexPage = () => {
   return (
     <main>
       <Layout pageTitle="joelyoshiya.me">
-        <ProfileImage />
-        <p className="mb-1 text-3xl text-emerald-500 dark:text-emerald-300">
-          I'm Joel, a product-driven software engineer and thinker
-        </p>
-        <p className="text-lg">
-          I love to both explore the performance, scalability, and extensibility
-          facets of a solution and
-          <span className="font-semibold">
-            {" "}
-            always consider who we're building for.{" "}
-          </span>
-        </p>
+        <div className="ml-16">
+          <ProfileImage />
+          <p className="mb-1 text-3xl text-emerald-500 dark:text-emerald-300">
+            I'm Joel, a product-driven software engineer and thinker
+          </p>
+          <p className="text-lg">
+            I love to both explore the performance, scalability, and
+            extensibility facets of a solution and
+            <span className="font-semibold">
+              {" "}
+              always consider who we're building for.{" "}
+            </span>
+          </p>
+        </div>
       </Layout>
     </main>
   );

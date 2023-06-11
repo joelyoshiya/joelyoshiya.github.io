@@ -9,15 +9,32 @@ const BlogPost = ({ data, children }) => {
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
-      <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
-      <p>
-        Photo Credit:{" "}
-        <a href={data.mdx.frontmatter.hero_image_credit_link}>
-          {data.mdx.frontmatter.hero_image_credit_text}
-        </a>
-      </p>
-      {children}
+      <div className="flex min-h-screen">
+        <div className="m-auto mt-10 max-w-4xl">
+          <div className="text-center">
+            <p className="mt-5 text-3xl font-semibold">
+              {data.mdx.frontmatter.title}
+            </p>
+            <p className="mb-3 mt-3 text-slate-500">
+              {data.mdx.frontmatter.date}
+            </p>
+            <div className="flex justify-center">
+              <GatsbyImage
+                className="max-w-xs"
+                image={image}
+                alt={data.mdx.frontmatter.hero_image_alt}
+              />
+            </div>
+            <p className="mb-3 mt-1 text-xs text-slate-500">
+              Photo Credit:{" "}
+              <a href={data.mdx.frontmatter.hero_image_credit_link}>
+                {data.mdx.frontmatter.hero_image_credit_text}
+              </a>
+            </p>
+            {children}
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };

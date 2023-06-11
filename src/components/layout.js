@@ -17,7 +17,7 @@ const Layout = ({ pageTitle, children }) => {
     <div>
       <main>
         <Navbar siteTitle={data.site.siteMetadata.title} />
-        <div className="ml-16">{children}</div>
+        {children}
       </main>
     </div>
   );
