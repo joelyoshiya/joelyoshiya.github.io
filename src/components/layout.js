@@ -14,10 +14,12 @@ const Layout = ({ pageTitle, children }) => {
   `);
 
   return (
-    <main>
-      <Navbar siteTitle={data.site.siteMetadata.title} />
-      <div className="ml-16">{children}</div>
-    </main>
+    <div className="dark:bg-slate-700">
+      <main>
+        <Navbar siteTitle={data.site.siteMetadata.title} />
+        <div className="ml-16">{children}</div>
+      </main>
+    </div>
   );
 };
 

@@ -1,6 +1,11 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
+// this func will toggle dark mode by changing the classnames on the body element
+const toggleDarkMode = () => {
+  document.body.classList.toggle("dark");
+};
+
 const Navbar = ({ siteTitle }) => {
   return (
     <nav className="border-gray-200 bg-white dark:bg-gray-900">
@@ -61,6 +66,14 @@ const Navbar = ({ siteTitle }) => {
             >
               About
             </Link>
+          </li>
+          <li>
+            <button
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+              onClick={toggleDarkMode}
+            >
+              Toggle Dark Mode
+            </button>
           </li>
         </div>
       </ul>

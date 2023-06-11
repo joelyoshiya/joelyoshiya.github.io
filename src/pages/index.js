@@ -11,7 +11,7 @@ const IndexPage = () => {
         <p className="mb-1 text-3xl text-emerald-500 dark:text-emerald-300">
           I'm Joel, a product-driven software engineer and thinker
         </p>
-        <p className="text-lg">
+        <p className="text-lg dark:text-emerald-50">
           I love to both explore the performance, scalability, and extensibility
           facets of a solution and
           <span className="font-semibold">
