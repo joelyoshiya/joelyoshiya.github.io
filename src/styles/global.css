@@ -7,5 +7,6 @@ body {
   }
   
   body.dark {
-    @apply bg-slate-900 text-emerald-50;
+    @apply bg-slate-900 text-emerald-50 md:text-emerald-50;
+
   }
