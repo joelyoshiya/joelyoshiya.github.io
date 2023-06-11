@@ -14,7 +14,7 @@ const Layout = ({ pageTitle, children }) => {
   `);
 
   return (
-    <div className="dark:bg-slate-700">
+    <div>
       <main>
         <Navbar siteTitle={data.site.siteMetadata.title} />
         <div className="ml-16">{children}</div>

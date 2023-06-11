@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-// this func will toggle dark mode by changing the classnames on the body element
+// this func will toggle dark mode by changing the classname on the body element
 const toggleDarkMode = () => {
-  document.body.classList.toggle("dark");
+  document.body.classList.toggle("dark"); // TODO: use system preferences to set dark mode in the future
 };
 
 const Navbar = ({ siteTitle }) => {
