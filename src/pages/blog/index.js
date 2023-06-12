@@ -2,13 +2,15 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
+import { GiDinosaurEgg } from "react-icons/gi";
 
 const BlogPage = ({ data }) => {
   return (
     <main>
       <Layout pageTitle="Yoshi's Word  Island - a blog by Joel Yoshiya Foster">
         <p className="mt-10 flex justify-center font-semibold md:text-lg lg:text-3xl">
-          Yoshi's Word Island - a blog by Joel Yoshiya Foster
+          Yoshi's Word Island
+          <GiDinosaurEgg className="ml-2 mr-2" />- a blog by Joel Yoshiya Foster
         </p>
         <div className="mt-20 grid grid-rows-none justify-center">
           {data.allMdx.nodes.map((node) => (
