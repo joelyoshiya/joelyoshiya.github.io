@@ -7,16 +7,25 @@ const BlogPage = ({ data }) => {
   return (
     <main>
       <Layout pageTitle="Yoshi's Word  Island - a blog by Joel Yoshiya Foster">
-        {data.allMdx.nodes.map((node) => (
-          <article key={node.id}>
-            <h2>
-              <Link to={`/blog${node.frontmatter.slug}`}>
-                {node.frontmatter.title}
-              </Link>
-            </h2>
-            <p>Posted: {node.frontmatter.date}</p>
-          </article>
-        ))}
+        <p className="mt-10 flex justify-center font-semibold md:text-lg lg:text-3xl">
+          Yoshi's Word Island - a blog by Joel Yoshiya Foster
+        </p>
+        <div className="mt-20 grid grid-rows-none justify-center">
+          {data.allMdx.nodes.map((node) => (
+            <div className="m-2">
+              <article key={node.id}>
+                <p className="font-medium">
+                  <Link to={`/blog${node.frontmatter.slug}`}>
+                    {node.frontmatter.title}
+                  </Link>
+                </p>
+                <p className="text-sm text-slate-500">
+                  Posted: {node.frontmatter.date}
+                </p>
+              </article>
+            </div>
+          ))}
+        </div>
       </Layout>
     </main>
   );
