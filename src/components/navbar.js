@@ -10,7 +10,7 @@ const toggleDarkMode = () => {
 const Navbar = ({ siteTitle }) => {
   return (
     <nav>
-      <ul className="flex flex-col flex-wrap rounded-lg border border-gray-100 p-4 font-mono font-medium dark:border-gray-700 md:flex-row md:flex-nowrap md:justify-between md:space-x-8 md:border-0 md:p-4">
+      <ul className="flex flex-col flex-wrap rounded-lg border border-gray-100 p-4 font-mono font-medium dark:border-gray-700 md:flex-row md:flex-nowrap md:justify-between md:space-x-8 md:border-0 md:p-4 md:text-lg lg:text-xl">
         <li>
           <Link
             className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
