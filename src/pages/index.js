@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import ProfileImage from "../components/profileImage";
 import BlueChatBubble from "../components/blueChatBubble";
+import ProjectCarousel from "../components/projectCarousel";
 
 const IndexPage = () => {
   return (
@@ -22,6 +23,7 @@ const IndexPage = () => {
             </span>
           </p>
           <BlueChatBubble text={"Tell me more about yourself!"} />
+          <ProjectCarousel />
         </div>
       </Layout>
     </main>

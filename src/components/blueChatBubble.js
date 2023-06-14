@@ -27,7 +27,9 @@ const BlueChatBubble = ({ text }) => {
   return (
     <div className="mr-5 mt-5 flex justify-end">
       <div className="chat chat-end">
-        <div className="chat-bubble text-xl md:text-2xl lg:text-4xl">{text}</div>
+        <div className="chat-bubble text-xl md:text-2xl lg:text-4xl">
+          {text}
+        </div>
         <div className="chat-footer opacity-50">Seen at 12:46</div>
       </div>
     </div>
