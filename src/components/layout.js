@@ -14,7 +14,7 @@ const Layout = ({ pageTitle, children }) => {
   `);
 
   return (
-    <div className="h-screen w-screen bg-inherit dark:bg-inherit md:bg-gradient-to-br md:from-white md:from-30% md:to-emerald-100 md:dark:bg-gradient-to-br dark:md:from-black dark:md:from-30% dark:md:to-emerald-900">
+    <div className="min-h-screen bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900">
       <main>
         <Navbar siteTitle={data.site.siteMetadata.title} />
         {children}
