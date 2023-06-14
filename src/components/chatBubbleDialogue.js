@@ -23,17 +23,23 @@ import React from "react";
 //   );
 // };
 
-const BlueChatBubble = ({ text }) => {
+const ChatBubbleDialogue = ({ text }) => {
   return (
-    <div className="mr-5 mt-5 flex justify-end">
+    <div className="mb-5 flex flex-col">
       <div className="chat chat-end">
-        <div className="chat-bubble text-xl md:text-2xl lg:text-4xl">
+        <div className="chat-bubble text-xl shadow-xl md:text-2xl lg:text-4xl">
           {text}
         </div>
         <div className="chat-footer opacity-50">Seen at 12:46</div>
+      </div>
+      <div className="chat chat-start">
+        <div className="chat-bubble text-xl shadow-xl md:text-2xl lg:text-4xl">
+          Sure! First off, here are some projects:
+        </div>
+        <div className="chat-footer opacity-50">Sent at 12:47</div>
       </div>
     </div>
   );
 };
 
-export default BlueChatBubble;
+export default ChatBubbleDialogue;
