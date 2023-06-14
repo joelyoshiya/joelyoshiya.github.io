@@ -14,7 +14,7 @@ const Layout = ({ pageTitle, children }) => {
   `);
 
   return (
-    <div>
+    <div className="h-screen bg-gradient-to-br from-white to-emerald-100 dark:bg-gradient-to-tl dark:from-emerald-900 dark:to-black">
       <main>
         <Navbar siteTitle={data.site.siteMetadata.title} />
         {children}
