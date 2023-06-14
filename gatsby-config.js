@@ -7,6 +7,15 @@ module.exports = {
     siteUrl: `https://joelyoshiya.me/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `joelyoshiya.me`,
+        short_name: `jy.me`,
+        start_url: `/`,
+        icon: `src/images/profile.jpeg`,
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
