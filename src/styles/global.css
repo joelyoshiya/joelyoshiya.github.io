@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white text-slate-800;
+  @apply bg-white text-slate-800 font-light;
 }
   
 body.dark {
-  @apply bg-slate-900 text-emerald-50 md:text-emerald-50;
+  @apply bg-slate-900 text-emerald-50 md:text-emerald-50 font-light;
 
 }
 
