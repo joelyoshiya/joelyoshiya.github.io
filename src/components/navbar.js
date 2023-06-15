@@ -11,6 +11,16 @@ const toggleDarkMode = () => {
 
 const Navbar = ({ siteTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // this func will limit scrolling when the menu is open
+  React.useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMenuOpen]);
+
   return (
     <nav>
       <ul className="flex flex-row flex-wrap justify-between rounded-lg border border-gray-100 p-4 font-mono font-medium dark:border-gray-700 md:flex-nowrap md:space-x-8 md:border-0 md:p-4 md:text-lg lg:text-xl">
