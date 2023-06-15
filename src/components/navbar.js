@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { useState } from "react";
 import { CgDarkMode } from "react-icons/cg";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 // this func will toggle dark mode by changing the classname on the body element
 const toggleDarkMode = () => {
@@ -88,9 +88,10 @@ const Navbar = ({ siteTitle }) => {
               className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              <FiMenu size="1.5em" />
+              {isMenuOpen ? <FiX size="1.5em" /> : <FiMenu size="1.5em" />}
             </button>
           </li>
+
           <li>
             <button
               className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
@@ -103,8 +104,7 @@ const Navbar = ({ siteTitle }) => {
 
         {/* mobile menu */}
         {isMenuOpen && (
-          <div className="fixed left-0 top-0 z-50 flex h-full w-full flex-col items-center justify-center space-y-5 bg-white dark:bg-black">
-            <button onClick={() => setIsMenuOpen(false)}>Close</button>
+          <div className="fixed left-0 top-20 z-50 flex h-[calc(100vh-4rem)] w-full flex-col items-center justify-center space-y-5 overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900">
             <Link to="/work" className="p-2">
               Work
             </Link>
