@@ -9,7 +9,7 @@ const IndexPage = () => {
   return (
     <main>
       <Layout pageTitle="joelyoshiya.me">
-        <div className="pl-16 pr-16">
+        <div className="px-16">
           <ProfileImage />
           <p className="pb-1 text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl">
             Hi! ✌️ I'm Joel, a product-driven software engineer and thinker
