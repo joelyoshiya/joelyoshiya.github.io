@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 body {
-    @apply bg-white text-slate-800;
-  }
+  @apply bg-white text-slate-800;
+}
   
-  body.dark {
-    @apply bg-slate-900 text-emerald-50 md:text-emerald-50;
+body.dark {
+  @apply bg-slate-900 text-emerald-50 md:text-emerald-50;
 
-  }
+}
+
+.grid-rows-layout {
+  grid-template-rows: auto 1fr auto;
+}
