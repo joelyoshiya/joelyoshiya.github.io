@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { useState } from "react";
 import { CgDarkMode } from "react-icons/cg";
+import { FiMenu } from "react-icons/fi";
 
 // this func will toggle dark mode by changing the classname on the body element
 const toggleDarkMode = () => {
@@ -12,7 +13,7 @@ const Navbar = ({ siteTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <nav>
-      <ul className="flex flex-col flex-wrap rounded-lg border border-gray-100 p-4 font-mono font-medium dark:border-gray-700 md:flex-row md:flex-nowrap md:justify-between md:space-x-8 md:border-0 md:p-4 md:text-lg lg:text-xl">
+      <ul className="flex flex-row flex-wrap justify-between rounded-lg border border-gray-100 p-4 font-mono font-medium dark:border-gray-700 md:flex-nowrap md:space-x-8 md:border-0 md:p-4 md:text-lg lg:text-xl">
         <li>
           <Link
             className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
@@ -79,9 +80,25 @@ const Navbar = ({ siteTitle }) => {
             </button>
           </li>
         </div>
+
         {/* mobile menu button */}
-        <div className="flex items-center md:hidden">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)}>Menu</button>
+        <div className="flex items-center space-x-2 md:hidden">
+          <li>
+            <button
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <FiMenu size="1.5em" />
+            </button>
+          </li>
+          <li>
+            <button
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
+              onClick={toggleDarkMode}
+            >
+              <CgDarkMode size="1.5em" />
+            </button>
+          </li>
         </div>
 
         {/* mobile menu */}
