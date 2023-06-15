@@ -9,12 +9,12 @@ const IndexPage = () => {
   return (
     <main>
       <Layout pageTitle="joelyoshiya.me">
-        <div className="pl-16">
+        <div className="pl-16 pr-16">
           <ProfileImage />
           <p className="pb-1 text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl">
             Hi! ✌️ I'm Joel, a product-driven software engineer and thinker
           </p>
-          <p className="m-auto mb-3 mt-2 text-lg md:text-xl lg:text-3xl">
+          <p className="mb-10 mt-2 text-lg md:text-xl lg:text-3xl">
             I love to both explore the performance, scalability, and
             extensibility facets of a solution and
             <span className="font-semibold">

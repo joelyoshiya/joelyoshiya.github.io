@@ -27,13 +27,13 @@ const ChatBubbleDialogue = ({ text }) => {
   return (
     <div className="mb-5 flex flex-col">
       <div className="chat chat-end">
-        <div className="chat-bubble text-xl shadow-xl md:text-2xl lg:text-4xl">
+        <div className="chat-bubble text-xl shadow-xl md:text-2xl lg:text-3xl">
           {text}
         </div>
         <div className="chat-footer opacity-50">Seen at 12:46</div>
       </div>
       <div className="chat chat-start">
-        <div className="chat-bubble text-xl shadow-xl md:text-2xl lg:text-4xl">
+        <div className="chat-bubble text-xl shadow-xl md:text-2xl lg:text-3xl">
           Sure! First off, here are some projects:
         </div>
         <div className="chat-footer opacity-50">Sent at 12:47</div>
