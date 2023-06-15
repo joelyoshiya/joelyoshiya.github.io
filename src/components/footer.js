@@ -44,7 +44,7 @@ const Footer = () => {
           Resume
         </Link>
         <Link
-          to="https://open.spotify.com/user/1229025912?si=536fdfc74c854ef7"
+          to="https://drive.google.com/file/d/1n54uFZOBW6t7TRqGt0Tbqtcl7SkU7FqX/view?usp=sharing"
           className="my-1 md:my-0 md:mr-5"
         >
           Spotify
