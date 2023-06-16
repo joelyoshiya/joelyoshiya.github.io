@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CgDarkMode } from "react-icons/cg";
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -12,6 +12,22 @@ const toggleDarkMode = () => {
 
 const Navbar = ({ siteTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    setIsDarkMode(isDarkMode);
+  }, []);
+  
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('darkMode', 'true');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('darkMode', 'false');
+    }
+  }, [isDarkMode]);
 
   // this func will limit scrolling when the menu is open
   React.useEffect(() => {
