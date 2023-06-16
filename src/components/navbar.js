@@ -22,11 +22,11 @@ const Navbar = ({ siteTitle }) => {
   }, [isMenuOpen]);
 
   return (
-    <nav>
-      <ul className="flex flex-row flex-wrap justify-between rounded-lg border border-gray-100 p-4 font-mono font-medium dark:border-gray-700 md:flex-nowrap md:space-x-8 md:border-0 md:p-4 md:text-lg lg:text-xl">
+    <nav className="sticky top-0 z-50  backdrop-filter backdrop-blur-xl backdrop-opacity-100">
+      <ul className="flex flex-row flex-wrap justify-between rounded-lg border border-gray-100 p-4 dark:border-gray-700 md:flex-nowrap md:space-x-8 md:border-0 md:p-4 md:text-lg lg:text-xl">
         <li>
           <Link
-            className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+            className="font-medium md:font-light block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
             to="/"
           >
             {siteTitle}
@@ -35,7 +35,7 @@ const Navbar = ({ siteTitle }) => {
         <div className="hidden items-center md:flex md:flex-row md:space-x-5">
           <li>
             <Link
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               to="/work"
             >
               Work
@@ -43,7 +43,7 @@ const Navbar = ({ siteTitle }) => {
           </li>
           <li>
             <Link
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               to="/projects"
             >
               Projects
@@ -51,7 +51,7 @@ const Navbar = ({ siteTitle }) => {
           </li>
           <li>
             <Link
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               to="/blog"
             >
               Blog
@@ -59,7 +59,7 @@ const Navbar = ({ siteTitle }) => {
           </li>
           <li>
             <Link
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               to="/bookshelf"
             >
               Bookshelf
@@ -67,7 +67,7 @@ const Navbar = ({ siteTitle }) => {
           </li>
           <li>
             <Link
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               to="/contact"
             >
               Contact
@@ -75,7 +75,7 @@ const Navbar = ({ siteTitle }) => {
           </li>
           <li>
             <Link
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               to="/about"
             >
               About
@@ -83,7 +83,7 @@ const Navbar = ({ siteTitle }) => {
           </li>
           <li>
             <button
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               onClick={toggleDarkMode}
             >
               <CgDarkMode size="1.5em" />
@@ -95,7 +95,7 @@ const Navbar = ({ siteTitle }) => {
         <div className="flex items-center space-x-2 md:hidden">
           <li>
             <button
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <FiX size="1.5em" /> : <FiMenu size="1.5em" />}
@@ -104,7 +104,7 @@ const Navbar = ({ siteTitle }) => {
 
           <li>
             <button
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 shadow-sm shadow-emerald-200 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
               onClick={toggleDarkMode}
             >
               <CgDarkMode size="1.5em" />
