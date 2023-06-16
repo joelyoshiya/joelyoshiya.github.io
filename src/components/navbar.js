@@ -22,11 +22,11 @@ const Navbar = ({ siteTitle }) => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="sticky top-0 z-50  backdrop-filter backdrop-blur-xl backdrop-opacity-100">
+    <nav className="sticky top-0 z-50  backdrop-blur-xl backdrop-opacity-100 backdrop-filter">
       <ul className="flex flex-row flex-wrap justify-between rounded-lg border border-gray-100 p-4 dark:border-gray-700 md:flex-nowrap md:space-x-8 md:border-0 md:p-4 md:text-lg lg:text-xl">
         <li>
           <Link
-            className="font-medium md:font-light block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
+            className="block rounded py-2 pl-3 pr-4 font-medium text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:font-light md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
             to="/"
           >
             {siteTitle}
@@ -96,25 +96,24 @@ const Navbar = ({ siteTitle }) => {
           <li>
             <button
               className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <FiX size="1.5em" /> : <FiMenu size="1.5em" />}
-            </button>
-          </li>
-
-          <li>
-            <button
-              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
               onClick={toggleDarkMode}
             >
               <CgDarkMode size="1.5em" />
+            </button>
+          </li>
+          <li>
+            <button
+              className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <FiX size="1.5em" /> : <FiMenu size="1.5em" />}
             </button>
           </li>
         </div>
 
         {/* mobile menu */}
         {isMenuOpen && (
-          <div className="fixed left-0 top-20 z-50 flex h-[calc(100vh-4rem)] w-full flex-col items-center justify-center space-y-5 overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900">
+          <div className="fixed left-0 top-16 z-50 flex h-[calc(100vh-4rem)] w-full flex-col items-center justify-center space-y-5 overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900">
             <Link to="/work" className="p-2">
               Work
             </Link>
