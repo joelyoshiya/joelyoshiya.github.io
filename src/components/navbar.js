@@ -9,6 +9,7 @@ const toggleDarkMode = () => {
   document.body.classList.toggle("dark"); // TODO: use system preferences to set dark mode in the future
 };
 
+
 const Navbar = ({ siteTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -20,6 +21,10 @@ const Navbar = ({ siteTitle }) => {
       document.body.style.overflow = "unset";
     }
   }, [isMenuOpen]);
+
+  const menuClasses = `fixed left-0 top-16 z-50 transition-transform duration-300 ease-in-out flex h-[calc(100vh-4rem)] w-full flex-col items-center justify-center space-y-5 overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900 ${isMenuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'}`
+  
+
 
   return (
     <nav className="sticky top-0 z-50  backdrop-blur-xl backdrop-opacity-100 backdrop-filter">
@@ -112,8 +117,7 @@ const Navbar = ({ siteTitle }) => {
         </div>
 
         {/* mobile menu */}
-        {isMenuOpen && (
-          <div className="fixed left-0 top-16 z-50 flex h-[calc(100vh-4rem)] w-full flex-col items-center justify-center space-y-5 overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900">
+          <div className={menuClasses}>
             <Link to="/work" className="p-2">
               Work
             </Link>
@@ -133,7 +137,6 @@ const Navbar = ({ siteTitle }) => {
               About
             </Link>
           </div>
-        )}
       </ul>
     </nav>
   );
