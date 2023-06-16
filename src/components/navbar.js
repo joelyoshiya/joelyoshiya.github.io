@@ -4,10 +4,8 @@ import { useState, useEffect } from "react";
 import { CgDarkMode } from "react-icons/cg";
 import { FiMenu, FiX } from "react-icons/fi";
 
-// this func will toggle dark mode by changing the classname on the body element
-const toggleDarkMode = () => {
-  document.body.classList.toggle("dark"); // TODO: use system preferences to set dark mode in the future
-};
+
+
 
 const Navbar = ({ siteTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,13 +18,18 @@ const Navbar = ({ siteTitle }) => {
 
   useEffect(() => {
     if (isDarkMode) {
-      document.documentElement.classList.add("dark");
+      document.body.classList.add("dark");
       localStorage.setItem("darkMode", "true");
     } else {
-      document.documentElement.classList.remove("dark");
+      document.body.classList.remove("dark");
       localStorage.setItem("darkMode", "false");
     }
   }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(prevState => !prevState);
+  };
+  
 
   // this func will limit scrolling when the menu is open
   React.useEffect(() => {
