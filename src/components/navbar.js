@@ -9,23 +9,22 @@ const toggleDarkMode = () => {
   document.body.classList.toggle("dark"); // TODO: use system preferences to set dark mode in the future
 };
 
-
 const Navbar = ({ siteTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  
+
   useEffect(() => {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
     setIsDarkMode(isDarkMode);
   }, []);
-  
+
   useEffect(() => {
     if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('darkMode', 'true');
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("darkMode", "true");
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('darkMode', 'false');
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("darkMode", "false");
     }
   }, [isDarkMode]);
 
@@ -38,9 +37,9 @@ const Navbar = ({ siteTitle }) => {
     }
   }, [isMenuOpen]);
 
-  const menuClasses = `fixed left-0 top-16 z-50 transition-transform duration-300 ease-in-out flex h-[calc(100vh-4rem)] w-full flex-col items-center justify-center space-y-5 overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900 ${isMenuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'}`
-  
-
+  const menuClasses = `md:hidden fixed left-0 top-16 z-50 transition-transform duration-300 ease-in-out flex h-[calc(100vh-4rem)] w-full flex-col items-center justify-center space-y-5 overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900 ${
+    isMenuOpen ? "transform translate-x-0" : "transform -translate-x-full"
+  }`;
 
   return (
     <nav className="sticky top-0 z-50  backdrop-blur-xl backdrop-opacity-100 backdrop-filter">
@@ -133,26 +132,26 @@ const Navbar = ({ siteTitle }) => {
         </div>
 
         {/* mobile menu */}
-          <div className={menuClasses}>
-            <Link to="/work" className="p-2">
-              Work
-            </Link>
-            <Link to="/projects" className="p-2">
-              Projects
-            </Link>
-            <Link to="/blog" className="p-2">
-              Blog
-            </Link>
-            <Link to="/bookshelf" className="p-2">
-              Bookshelf
-            </Link>
-            <Link to="/contact" className="p-2">
-              Contact
-            </Link>
-            <Link to="/about" className="p-2">
-              About
-            </Link>
-          </div>
+        <div className={menuClasses}>
+          <Link to="/work" className="p-2">
+            Work
+          </Link>
+          <Link to="/projects" className="p-2">
+            Projects
+          </Link>
+          <Link to="/blog" className="p-2">
+            Blog
+          </Link>
+          <Link to="/bookshelf" className="p-2">
+            Bookshelf
+          </Link>
+          <Link to="/contact" className="p-2">
+            Contact
+          </Link>
+          <Link to="/about" className="p-2">
+            About
+          </Link>
+        </div>
       </ul>
     </nav>
   );
