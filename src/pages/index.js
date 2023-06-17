@@ -15,8 +15,8 @@ const IndexPage = () => {
     const typed = new Typed(el.current, {
       strings: ["Hi! ✌️", "I'm Joel. A product-driven software engineer and thinker."],
       typeSpeed: 50,
+      backSpeed: 50,
       cursorChar: '<span class="text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl">|</span>',
-      autoInsertCss: true,
     });
 
     return () => {
