@@ -17,6 +17,7 @@ const IndexPage = () => {
       typeSpeed: 50,
       backSpeed: 50,
       cursorChar: '<span class="text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl">|</span>',
+      onComplete: (self) => { self.cursor.remove(); },
     });
 
     return () => {
@@ -32,9 +33,6 @@ const IndexPage = () => {
           <ProfileImage />
           <div className="mt-4">
           <span className="text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl" ref={el} />
-          {/* <p className="pb-1 text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl">
-            Hi! ✌️ I'm Joel, a product-driven software engineer and thinker
-          </p> */}
           </div>
           <p className="mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
             I love to both explore the performance, scalability, and
