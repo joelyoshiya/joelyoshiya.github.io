@@ -2,19 +2,40 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import ProfileImage from "../components/profileImage";
+import Typed from 'typed.js';
 // import ChatBubbleDialogue from "../components/chatBubbleDialogue";
 // import ProjectCarousel from "../components/projectCarousel";
 import ExtLink from "../components/extLink";
 
 const IndexPage = () => {
+  // Create reference to store the DOM element containing the animation
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Hi! ✌️", "I'm Joel. A product-driven software engineer and thinker."],
+      typeSpeed: 50,
+      cursorChar: '<span class="text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl">|</span>',
+      autoInsertCss: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+  
   return (
     <main>
       <Layout pageTitle="joelyoshiya.me">
         <div className="px-16">
           <ProfileImage />
-          <p className="pb-1 text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl">
+          <div className="mt-4">
+          <span className="text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl" ref={el} />
+          {/* <p className="pb-1 text-3xl text-emerald-500 dark:text-emerald-300 md:text-5xl lg:text-6xl">
             Hi! ✌️ I'm Joel, a product-driven software engineer and thinker
-          </p>
+          </p> */}
+          </div>
           <p className="mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
             I love to both explore the performance, scalability, and
             extensibility facets of a solution and
