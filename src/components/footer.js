@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-between p-5 md:flex-row">
-      <div className="my-2 flex flex-col items-center justify-center text-sm text-gray-500 dark:text-gray-400 md:flex-row">
+      <div className="flex my-2 flex-row space-x-2 items-center justify-center text-sm text-gray-500 dark:text-gray-400 md:flex-row">
         <Link
           to="https://github.com/joelyoshiya"
           className="my-1 md:my-0 md:mr-5 hover:text-emerald-300"
