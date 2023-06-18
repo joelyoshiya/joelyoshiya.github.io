@@ -5,7 +5,7 @@ import Seo from "../components/seo";
 const BookShelfPage = () => {
   return (
     <main>
-      <Layout pageTitle="Yoshi's Word  Island - a blog by Joel Yoshiya Foster">
+      <Layout pageTitle="My Bookshelf">
         <ol>
           <li>Ametora</li>
           <li>Figuring</li>
