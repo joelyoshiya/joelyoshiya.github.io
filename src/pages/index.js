@@ -42,8 +42,8 @@ const IndexPage = () => {
             ref={el}
           />
         </div>
-        <p className="mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
-          I love to both explore the performance, scalability, and extensibility
+        <p className="leading-relaxed mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
+          I love to explore both the performance, scalability, and usability
           facets of a solution and
           <span className="font-semibold">
             {" "}
@@ -55,21 +55,22 @@ const IndexPage = () => {
             text2={"Sure!"}
           /> */}
         {/* <ProjectCarousel /> */}
-        <p className="mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
+        <p className="leading-relaxed mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
           After graduating from the University of Wisconsin with a degrees in
           Computer Science and Japanese, I joined{" "}
           <ExtLink link="https://business.fetch.com/" linkText="Fetch" /> as a
           backend software engineering apprentice.
         </p>
-        <p className="mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
+        <p className="leading-relaxed mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
           If you'd like to learn more, take a look at my{" "}
           <ExtLink
             link="https://drive.google.com/file/d/1n54uFZOBW6t7TRqGt0Tbqtcl7SkU7FqX/view?usp=sharing"
             linkText="Resume"
           />{" "}
-          or reach out at{" "}
-          <ExtLink link="mailto:joel.foster@gmail.com " linkText="my email" />.
-
+          or contact me at{" "}
+          <span className="font-semibold underline underline-offset-2">
+            <a href="mailto:joel.foster@gmail.com">my email</a>
+          </span>
         </p>
       </Layout>
     </main>
