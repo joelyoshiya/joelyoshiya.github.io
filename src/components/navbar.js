@@ -41,7 +41,7 @@ const Navbar = ({ siteTitle }) => {
   }, [isMenuOpen]);
 
   const menuClasses = `md:hidden fixed left-0 top-16 z-50 transition-transform duration-300 ease-in-out flex h-[calc(100vh-4rem)] w-full flex-col items-center justify-center space-y-5 overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900 ${
-    isMenuOpen ? "transform translate-x-0" : "transform translate-x-full"
+    isMenuOpen ? "transform translate-x-0" : "transform -translate-x-full"
   }`;
 
   return (

@@ -66,7 +66,10 @@ const IndexPage = () => {
           <ExtLink
             link="https://drive.google.com/file/d/1n54uFZOBW6t7TRqGt0Tbqtcl7SkU7FqX/view?usp=sharing"
             linkText="Resume"
-          />
+          />{" "}
+          or reach out at{" "}
+          <ExtLink link="mailto:joel.foster@gmail.com " linkText="my email" />.
+
         </p>
       </Layout>
     </main>
