@@ -40,7 +40,7 @@ const Navbar = ({ siteTitle }) => {
     }
   }, [isMenuOpen]);
 
-  const menuClasses = `md:hidden fixed left-0 top-16 z-50 transition-transform duration-300 ease-in-out flex h-[calc(100vh-4rem)] w-full flex-col items-center justify-center space-y-5 overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900 ${
+  const menuClasses = `md:hidden fixed left-0 top-16 z-50 transition-transform duration-300 ease-in-out flex h-[calc(100vh-4rem)] w-full flex-col items-left text-2xl justify-end space-y-3 font-semibold overflow-y-auto bg-gradient-to-br from-white from-30% to-emerald-100 dark:bg-gradient-to-br dark:from-black dark:from-30% dark:to-emerald-900 ${
     isMenuOpen ? "transform translate-x-0" : "transform -translate-x-full"
   }`;
 
@@ -136,22 +136,22 @@ const Navbar = ({ siteTitle }) => {
 
         {/* mobile menu */}
         <div className={menuClasses}>
-          <Link to="/work" className="p-2">
+          <Link to="/work" className="pl-5">
             Work
           </Link>
-          <Link to="/projects" className="p-2">
+          <Link to="/projects" className="pl-5">
             Projects
           </Link>
-          <Link to="/blog" className="p-2">
+          <Link to="/blog" className="pl-5">
             Blog
           </Link>
-          <Link to="/bookshelf" className="p-2">
+          <Link to="/bookshelf" className="pl-5">
             Bookshelf
           </Link>
-          <Link to="/contact" className="p-2">
+          <Link to="/contact" className="pl-5">
             Contact
           </Link>
-          <Link to="/about" className="p-2">
+          <Link to="/about" className="pl-5 pb-5">
             About
           </Link>
         </div>
