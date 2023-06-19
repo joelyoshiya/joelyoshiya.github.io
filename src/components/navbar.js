@@ -56,7 +56,7 @@ const Navbar = ({ siteTitle }) => {
           </Link>
         </li>
         <div className="hidden items-center md:flex md:flex-row md:space-x-5">
-          <li>
+          {/* <li>
             <Link
               className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               to="/work"
@@ -71,7 +71,7 @@ const Navbar = ({ siteTitle }) => {
             >
               Projects
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
@@ -80,22 +80,22 @@ const Navbar = ({ siteTitle }) => {
               Blog
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               to="/bookshelf"
             >
               Bookshelf
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link
               className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
               to="/contact"
             >
               Contact
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-emerald-50 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-emerald-500 md:dark:hover:bg-transparent md:dark:hover:text-emerald-400"
@@ -136,21 +136,21 @@ const Navbar = ({ siteTitle }) => {
 
         {/* mobile menu */}
         <div className={menuClasses}>
-          <Link to="/work" className="pl-5">
+          {/* <Link to="/work" className="pl-5">
             Work
           </Link>
           <Link to="/projects" className="pl-5">
             Projects
-          </Link>
+          </Link> */}
           <Link to="/blog" className="pl-5">
             Blog
           </Link>
-          <Link to="/bookshelf" className="pl-5">
+          {/* <Link to="/bookshelf" className="pl-5">
             Bookshelf
           </Link>
           <Link to="/contact" className="pl-5">
             Contact
-          </Link>
+          </Link> */}
           <Link to="/about" className="pl-5 pb-5">
             About
           </Link>
