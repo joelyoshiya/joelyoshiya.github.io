@@ -15,7 +15,7 @@ const IndexPage = () => {
     const typed = new Typed(el.current, {
       strings: [
         "Hi! ✌️",
-        "I'm Joel. A product-driven software engineer and thinker.",
+        "I'm Joel. A technical problem solver and thinker.",
       ],
       typeSpeed: 50,
       backSpeed: 50,
@@ -43,11 +43,10 @@ const IndexPage = () => {
           />
         </div>
         <p className="leading-relaxed mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
-          I love to explore both the performance, scalability, and usability
-          facets of a solution and
+          I love to explore the world through a data driven lens, and I'm 
           <span className="font-semibold">
             {" "}
-            always consider who we're building for.{" "}
+            always considering who we're building for and why.{" "}
           </span>
         </p>
         {/* <ChatBubbleDialogue
