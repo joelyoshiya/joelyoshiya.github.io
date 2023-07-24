@@ -59,7 +59,7 @@ const IndexPage = () => {
           After graduating from the University of Wisconsin with a degrees in
           Computer Science and Japanese, I joined{" "}
           <ExtLink link="https://business.fetch.com/" linkText="Fetch" /> as a
-          backend software engineering apprentice.
+          backend software engineer.
         </p>
         <p className="leading-relaxed mb-10 mt-2 text-lg md:text-xl lg:text-2xl">
           If you'd like to learn more, take a look at my{" "}
